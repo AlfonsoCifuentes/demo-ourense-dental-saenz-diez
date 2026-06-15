@@ -12,5 +12,9 @@
   "value_signal": "Clinica dental con telefono, WhatsApp, tecnologia, instalaciones y tratamientos.",
   "demo_url": "https://demo-ourense-dental-saenz-diez.vercel.app",
   "github_url": "https://github.com/AlfonsoCifuentes/demo-ourense-dental-saenz-diez",
-  "outreach_status": "drafted_not_sent"
+  "outreach_status": "queued_pending",
+  "outreach_queue_id": "hermes-webdemo-20260615-015",
+  "outreach_version": "hermes-prepared-custom-v1-20260615",
+  "outreach_contact_type": "email publico de la web",
+  "proposed_price": "590 EUR"
 }
