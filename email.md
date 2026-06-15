@@ -1,26 +1,23 @@
-# Email draft - Clinica Dental Saenz-Diez
+# Email draft - Clínica Dental Sáenz-Díez
 
 - To: info@clinicadentalsaenz-diez.es
-- Contact type: email publico de la web
-- Subject: Clinica Dental Saenz-Diez: demo web nueva por 590 EUR
+- Subject: Clínica Dental Sáenz-Díez: propuesta web más actual y orientada a cita
 - Proposed price: 590 EUR
 - Demo: https://demo-ourense-dental-saenz-diez.vercel.app
 - Source: https://www.clinicadentalsaenz-diez.es/
 
 Hola,
 
-He revisado la web de Clinica Dental Saenz-Diez. Esta activa y tiene lo basico, pero precisamente por ser tan basica no transmite todo el valor que una clinica dental necesita: equipo, tecnologia, instalaciones, tratamientos y confianza visual.
-
-El punto debil es claro: el titulo es generico, la pagina pesa muy poco, se ve antigua y no ayuda a que un paciente nuevo de Ourense decida pedir cita frente a otra clinica con mejor presencia.
-
-He preparado una demo limpia y orientada a cita:
+He preparado una propuesta visual para Clínica Dental Sáenz-Díez:
 https://demo-ourense-dental-saenz-diez.vercel.app
 
-Incluye tratamientos visuales, telefono visible, entrada por tipo de paciente y un enfoque de SEO local.
+La página está redactada como una web final de clínica dental: equipo, tratamientos, tecnología, ubicación y cita desde móvil.
 
-Lo dejaria publicado por 590 EUR, pago unico, con version movil, contenido actual traspasado y formulario de cita.
+La web actual tiene lo básico, pero puede transmitir mejor confianza clínica y hacer más sencillo que un paciente nuevo entienda los tratamientos y contacte.
 
-Si os interesa, lo vemos en 10 minutos.
+Presupuesto cerrado: 590 EUR, pago único. Incluye rediseño responsive, textos adaptados, secciones de tratamientos, formulario de cita y publicación.
+
+Si os interesa, puedo enseñaros la propuesta y adaptarla con fotos reales de la clínica.
 
 Un saludo,
 Alfonso Cifuentes
