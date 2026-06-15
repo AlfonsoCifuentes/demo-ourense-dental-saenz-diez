@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demo rediseño web | Clinica Dental Saenz-Diez</title>
+  <meta name="description" content="Demo conceptual no oficial de rediseño web para Clinica Dental Saenz-Diez.">
+  <style>
+    :root { --accent:#0891b2; --accent2:#65a30d; --dark:#0f172a; --pale:#ecfeff; --ink:#111827; --muted:#64748b; --line:rgba(15,23,42,.14); --white:#fff; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: var(--ink); background: var(--white); line-height: 1.52; }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
+    .button { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; border-radius: 8px; border: 1px solid transparent; padding: 11px 16px; font-weight: 800; }
+    .button.primary { background: var(--accent); color: #fff; }
+    .button.secondary { border-color: currentColor; color: inherit; background: transparent; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { font-size: clamp(38px, 7vw, 82px); line-height: .94; letter-spacing: 0; }
+    h2 { font-size: clamp(28px, 4vw, 52px); line-height: 1.04; letter-spacing: 0; color: var(--dark); }
+    h3 { font-size: 20px; line-height: 1.16; color: var(--dark); }
+    .eyebrow { color: var(--accent); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; font-weight: 900; }
+    .wrap { width: min(1180px, calc(100% - 36px)); margin: 0 auto; }
+    .top { position: sticky; top: 0; z-index: 20; background: rgba(255,255,255,.93); backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
+    .top .wrap { min-height: 66px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .brand { display: grid; gap: 0; }
+    .brand strong { color: var(--dark); font-size: 20px; }
+    .brand span { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .08em; }
+    nav { display: flex; align-items: center; gap: 18px; font-size: 14px; color: var(--dark); }
+    section { padding: clamp(54px, 7vw, 96px) 0; }
+    .grid { display: grid; gap: 22px; }
+    .two { grid-template-columns: minmax(0, 1fr) minmax(320px, .72fr); align-items: center; }
+    .three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .tile { border: 1px solid var(--line); border-radius: 8px; padding: 22px; background: #fff; min-height: 164px; }
+    .tile b { color: var(--accent); font-size: 13px; text-transform: uppercase; letter-spacing: .08em; }
+    .soft { background: var(--pale); }
+    .dark { background: var(--dark); color: #fff; }
+    .dark h2, .dark h3 { color: #fff; }
+    .dark p { color: rgba(255,255,255,.76); }
+    .source { font-size: 13px; color: var(--muted); }
+    .contactbox { border-radius: 8px; border: 1px solid var(--line); background: #fff; padding: 24px; }
+    .contactbox dl { margin: 0; display: grid; gap: 14px; }
+    .contactbox dt { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .08em; font-weight: 900; }
+    .contactbox dd { margin: 4px 0 0; font-weight: 760; color: var(--dark); overflow-wrap: anywhere; }
+    .lead-copy { font-size: clamp(17px, 2vw, 22px); color: color-mix(in srgb, var(--dark) 72%, #fff); }
+    footer { padding: 28px 0; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
+    footer .wrap { display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap; }
+    @media (max-width: 900px) {
+      nav a:not(.button) { display: none; }
+      .two, .three, .four { grid-template-columns: 1fr; }
+      h1 { font-size: clamp(36px, 13vw, 58px); }
+      .tile { min-height: auto; }
+    }
+  </style>
+  <style>
+    .hero-actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:26px; }
+    .proof-row { display:flex; flex-wrap:wrap; gap:10px; margin-top:24px; }
+    .proof-row span { border:1px solid var(--line); border-radius:999px; padding:9px 12px; color:var(--dark); background:#fff; font-weight:800; font-size:13px; }
+    .visual { min-height:520px; border-radius:8px; background-image:linear-gradient(180deg, rgba(0,0,0,.08), rgba(0,0,0,.18)), url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1800&q=82'); background-size:cover; background-position:center; }
+    .standard-hero { min-height: calc(100vh - 66px); display:grid; align-items:center; }
+  
+      body { background:#ffffff; }
+      .standard-hero { background:linear-gradient(180deg, #fff, var(--pale)); }
+      h1 { color:#0f172a; }
+      .visual { min-height:480px; border-radius:8px 8px 120px 8px; background-image:linear-gradient(180deg, rgba(236,254,255,.04), rgba(8,145,178,.22)), url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1800&q=82'); }
+      .tile { border-color:rgba(8,145,178,.18); background:linear-gradient(180deg,#fff,var(--pale)); }
+      .button.primary { background:#0f172a; }
+    </style>
+</head>
+<body class="layout-minimal">
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="#inicio"><strong>Clinica Dental Saenz-Diez</strong><span>clinica dental · Ourense</span></a>
+      <nav>
+        <a href="#diagnostico">Diagnostico</a>
+        <a href="#propuesta">Propuesta</a>
+        <a href="#contacto">Contacto</a>
+        <a class="button primary" href="tel:988251419">Llamar</a>
+      </nav>
+    </div>
+  </header>
+  <section class="hero standard-hero" id="inicio">
+    <div class="wrap grid two">
+      <div>
+        <p class="eyebrow">Demo de rediseño · 590 EUR</p>
+        <h1>Una clinica dental con tecnologia no deberia tener una web de 6 KB</h1>
+        <p class="lead-copy">Demo limpia para mostrar equipo, tecnologia, tratamientos, pacientes y cita en una experiencia movil de confianza.</p>
+        <div class="hero-actions"><a class="button primary" href="#contacto">Contactar</a><a class="button secondary" href="#propuesta">Ver propuesta</a></div>
+      </div>
+      <div class="visual" role="img" aria-label="Imagen conceptual"></div>
+    </div>
+  </section>
+  <main>
+    <section id="diagnostico" class="soft">
+    <div class="wrap grid two">
+      <div>
+        <p class="eyebrow">Punto debil observable</p>
+        <h2>La clinica menciona tecnologia, equipo e instalaciones, pero la pagina no transmite confianza visual ni prioriza tratamientos rentables.</h2>
+        <p class="lead-copy">Web activa muy breve, Joomla, title generico 'Inicio', contacto publico y firma 'Webdesign Joomla!'.</p>
+      </div>
+      <div class="grid">
+        <article class="tile"><b>Valor</b><h3>Clinica dental con telefono, WhatsApp, tecnologia, instalaciones y tratamientos.</h3><p>Se trata de un negocio con servicios suficientemente rentables como para justificar un rediseño de conversion.</p></article>
+        <article class="tile"><b>Precio propuesto</b><h3>590 EUR</h3><p>Importe cerrado pensado para que sea una decision asumible y no una propuesta de agencia pesada.</p></article>
+      </div>
+    </div>
+  </section>
+    <section id="propuesta">
+    <div class="wrap">
+      <div class="grid two proposal-head">
+        <div>
+          <p class="eyebrow">Propuesta comercial</p>
+          <h2>Un rediseño pensado para vender, no solo para decorar</h2>
+        </div>
+        <p class="lead-copy">La demo prioriza los puntos de mayor retorno y evita pedir al negocio una inversion grande antes de ver algo concreto.</p>
+      </div>
+      <div class="grid four"><article class="tile"><b>01</b><h3>Cita movil</h3><p>Entrada principal rediseñada para que el usuario entienda el siguiente paso sin leer toda la web.</p></article>
+<article class="tile"><b>02</b><h3>Tratamientos visuales</h3><p>Bloque pensado para reducir friccion, mejorar confianza y medir contactos reales.</p></article>
+<article class="tile"><b>03</b><h3>Equipo e instalaciones</h3><p>Bloque pensado para reducir friccion, mejorar confianza y medir contactos reales.</p></article>
+<article class="tile"><b>04</b><h3>SEO local Ourense</h3><p>Bloque pensado para reducir friccion, mejorar confianza y medir contactos reales.</p></article></div>
+      <div class="proof-row"><span>Tecnologia</span><span>Tratamientos</span><span>Pacientes</span><span>Instalaciones</span></div>
+    </div>
+  </section>
+    <section id="contacto" class="soft">
+    <div class="wrap grid two">
+      <div>
+        <p class="eyebrow">Contacto publico localizado</p>
+        <h2>La accion principal queda visible sin buscar en el pie</h2>
+        <p class="lead-copy">Esta demo usa solo datos publicos encontrados durante la verificacion. En produccion se sustituirian imagenes de stock por fotografias reales del equipo, sede o instalaciones.</p>
+        <p class="source">Fuente actual: <a href="https://www.clinicadentalsaenz-diez.es/" target="_blank" rel="noopener">https://www.clinicadentalsaenz-diez.es/</a></p>
+      </div>
+      <aside class="contactbox">
+        <dl>
+          <div><dt>Telefono</dt><dd><a href="tel:988251419">988 251 419</a></dd></div>
+          <div><dt>Email</dt><dd><a href="mailto:info@clinicadentalsaenz-diez.es">info@clinicadentalsaenz-diez.es</a></dd></div>
+          <div><dt>Tipo de contacto</dt><dd>email publico de la web</dd></div>
+          <div><dt>Ubicacion</dt><dd>Parque de San Lazaro, 10-3D, Ourense</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+  </main>
+  <footer><div class="wrap"><span>Demo conceptual no oficial para propuesta de rediseño.</span><span>Clinica Dental Saenz-Diez · Ourense</span></div></footer>
+</body>
+</html>
