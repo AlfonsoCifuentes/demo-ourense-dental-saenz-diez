@@ -12,3 +12,8 @@ Punto debil trabajado:
 La clinica menciona tecnologia, equipo e instalaciones, pero la pagina no transmite confianza visual ni prioriza tratamientos rentables.
 
 Stack: HTML estatico, CSS embebido y vercel.json para despliegue en Vercel.
+
+## Publicacion
+
+- GitHub: https://github.com/AlfonsoCifuentes/demo-ourense-dental-saenz-diez
+- Vercel: https://demo-ourense-dental-saenz-diez.vercel.app

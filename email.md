@@ -4,7 +4,7 @@
 - Contact type: email publico de la web
 - Subject: Clinica Dental Saenz-Diez: demo web nueva por 590 EUR
 - Proposed price: 590 EUR
-- Demo: {{VERCEL_URL}}
+- Demo: https://demo-ourense-dental-saenz-diez.vercel.app
 - Source: https://www.clinicadentalsaenz-diez.es/
 
 Hola,
@@ -14,7 +14,7 @@ He revisado la web de Clinica Dental Saenz-Diez. Esta activa y tiene lo basico, 
 El punto debil es claro: el titulo es generico, la pagina pesa muy poco, se ve antigua y no ayuda a que un paciente nuevo de Ourense decida pedir cita frente a otra clinica con mejor presencia.
 
 He preparado una demo limpia y orientada a cita:
-{{VERCEL_URL}}
+https://demo-ourense-dental-saenz-diez.vercel.app
 
 Incluye tratamientos visuales, telefono visible, entrada por tipo de paciente y un enfoque de SEO local.
 

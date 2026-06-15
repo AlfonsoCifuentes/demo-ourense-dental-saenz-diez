@@ -10,7 +10,7 @@
   "price": "590 EUR",
   "weakness": "La clinica menciona tecnologia, equipo e instalaciones, pero la pagina no transmite confianza visual ni prioriza tratamientos rentables.",
   "value_signal": "Clinica dental con telefono, WhatsApp, tecnologia, instalaciones y tratamientos.",
-  "demo_url": null,
-  "github_url": null,
+  "demo_url": "https://demo-ourense-dental-saenz-diez.vercel.app",
+  "github_url": "https://github.com/AlfonsoCifuentes/demo-ourense-dental-saenz-diez",
   "outreach_status": "drafted_not_sent"
 }
